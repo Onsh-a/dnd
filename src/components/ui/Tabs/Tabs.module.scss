@@ -1,0 +1,18 @@
+.tabs {
+  margin-bottom: 16px;
+}
+
+.tab {
+  padding: 14px 14px 16px 14px;
+  color: var(--base-color);
+  background: var(--tertiary-color);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: .2s;
+
+  &.active {
+    background: var(--base-color);
+    color: var(--base-text-color);
+  }
+}

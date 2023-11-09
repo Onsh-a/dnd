@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  color: var(--base-color);
+}
+
+.input {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.label {
+  margin-bottom: 8px;
+  color: inherit;
+}
