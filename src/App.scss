@@ -1,0 +1,19 @@
+// accordion
+$accordion-padding-y: 14px;
+$accordion-padding-x: 16px;
+$accordion-color: var(--base-color);
+$accordion-bg: var(--tertiary-color);
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: transparent;
+$accordion-border-radius: 0;
+$accordion-border-color: transparent;
+
+$accordion-button-color: inherit;
+$accordion-button-bg: inherit;
+$accordion-button-active-bg: var(--base-color);
+$accordion-button-active-color: var(--base-text-color);
+
+$accordion-icon-color: var(--base-color);
+$accordion-icon-active-color: #F7F7F2FF;
+
+@import "@coreui/coreui/scss/coreui";

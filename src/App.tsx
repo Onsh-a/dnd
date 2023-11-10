@@ -1,9 +1,7 @@
-import './App.css'
+import './App.scss'
 import Sheet from './views/Sheet/Sheet.tsx';
 
 function App() {
-
-
   return (
     <>
       <Sheet />
