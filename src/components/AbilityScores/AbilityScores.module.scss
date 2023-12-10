@@ -1,0 +1,29 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  border: 2px solid var(--base-color);
+}
+
+.item__title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.item__value {
+  text-align: center;
+}
+
+.item__modificator {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}

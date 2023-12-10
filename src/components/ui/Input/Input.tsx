@@ -14,7 +14,7 @@ const BaseInput = (props: BaseInputProps) => {
           className={styles.label}
           htmlFor={props.name}
         >
-          {props.name}
+          {props.name}:
         </label>
         <input
           readOnly={true}

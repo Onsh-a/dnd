@@ -2,18 +2,18 @@ import { CAccordion, CAccordionItem, CAccordionHeader, CAccordionBody } from '@c
 import styles from './Spells.module.scss';
 import { spells } from '@/data/spells.ts';
 import { useMemo } from 'react';
+import { SpellsProps } from '@/types/types.ts';
 
-const Spells = () => {
-  const knownSpellsIds = [1, 2, 23, 25, 52];
+const Spells = (props: SpellsProps) => {
   const knownSpellsAdapted = useMemo(() => {
-    const knownSpells = spells.filter(spell => knownSpellsIds.includes(spell.id))
+    const knownSpells = spells.filter(spell => props.character.knownSpellsIds.includes(spell.id))
     return [
       { level: '1 уровень ячейки', spells: knownSpells.filter(spell => spell.level === '1') },
       { level: '2 уровень ячейки', spells: knownSpells.filter(spell => spell.level === '2') },
       { level: '3 уровень ячейки', spells: knownSpells.filter(spell => spell.level === '3') },
       { level: '4 уровень ячейки', spells: knownSpells.filter(spell => spell.level === '4') },
     ]
-  }, [knownSpellsIds, spells]);
+  }, [props.character.knownSpellsIds, spells]);
 
   return (
     <>
